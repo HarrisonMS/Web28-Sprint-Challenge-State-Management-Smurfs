@@ -2,14 +2,14 @@ import React from "react";
 import "./App.css";
 import { applyMiddleware, createStore } from "redux";
 import logger from "redux-logger";
-import { rootReducer } from '../reducers';
+import { reducer } from '../reducers';
 import { composeWithDevTools } from "redux-devtools-extension";
 import thunk from 'redux-thunk';
 
 
 
 export const store = createStore(
-  rootReducer,
+  reducer,
   composeWithDevTools(applyMiddleware(thunk, logger)) 
 )
 const App =() => {
