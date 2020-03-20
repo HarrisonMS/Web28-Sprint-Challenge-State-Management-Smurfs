@@ -11,7 +11,7 @@ function App(props) {
 
   useEffect(() => {
     props.getSmurfs();
-  }, [])
+  }, [getSmurfs])
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -82,7 +82,7 @@ function App(props) {
   );
 }
 
-function mapStateToProps(state) {
+const mapStateToProps= (state) =>{
   return {
     smurfs: state.smurfs
   }

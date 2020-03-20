@@ -1,5 +1,5 @@
 import { initialState } from './initialState'
-import { START_FETCHING, GET_SMURFS, FETCH_FAILURE, SMURF_ADDED, SMURF_FAIL, START_ADDING } from '../actions/getSmurfs';
+import { START_FETCHING, GET_SMURFS, FETCH_FAILURE } from '../actions/getSmurfs';
 import { SUBMIT_SMURF } from '../actions/submitSmurf'
 
 export function smurfReducer(state = initialState, action) {
