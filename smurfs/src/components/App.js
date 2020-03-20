@@ -43,8 +43,6 @@ function App(props) {
   return (
     <div className="App">
       <h1>SMURFS Village</h1>
-
-
       <form onSubmit={handleSubmit}>
 
         <input 

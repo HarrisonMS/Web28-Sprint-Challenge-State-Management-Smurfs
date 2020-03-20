@@ -17,7 +17,12 @@ export function smurfReducer(state = initialState, action) {
           smurfs: action.payload,
           error: '',
         }
-
+    case FETCH_FAILURE:
+			return {
+				...state,
+				isLoading: false,
+        error: action.payload,
+			};
     case SUBMIT_SMURF:
         console.log(state)
         return {
